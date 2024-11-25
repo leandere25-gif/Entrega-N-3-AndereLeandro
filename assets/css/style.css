@@ -1,0 +1,614 @@
+
+/*sección de header y nav*/
+
+@font-face {
+    font-family: AtacadFlux-Regular ;
+    src: url(fonts/Afacad_Flux/static/AfacadFlux-Regular.ttf);
+}
+
+@font-face {
+    font-family: AfacadFlux-Bold ;
+    src: url(fonts/Afacad_Flux/static/AfacadFlux-Bold.ttf);
+}
+
+@font-face {
+    font-family:Teko-Regular;
+    src: url(fonts/static/Teko-Regular.ttf);
+}
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+body{
+    background-image: url(../images/backgroundbody.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+    background-color: rgba(240, 248, 255, 0.036);
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+main{
+    flex-grow: 1;
+}
+
+.encabezado{
+    background-color: rgb(29, 27, 37);
+    height: 155px;
+    position:absolute;
+    width: 100%;       
+}
+
+
+.titulo-principal{
+    font-size: 3.5em;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ,Teko-Regular;
+    letter-spacing: 3;
+    color: rgb(255,191,0);   
+    margin: auto;
+}
+
+.divtitulo {
+    display: flex;
+    height: 200px;
+    background-color: rgb(33, 33, 42);
+}
+
+
+.nav{
+    height: 45px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(23, 23, 26);
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.nav__item {
+    
+    font-size: 1.7em;
+    text-decoration: none;
+    margin: 0 20px 0 20px
+
+}
+
+.nav__item a{
+    text-decoration: none;
+    color:rgb(255, 191, 0);
+    font-size: 1em;
+
+}
+
+.nav__item:hover{
+    background-color: #333a;
+    transition: all 0.3s;
+    border-radius: 15px;
+    
+    
+
+}
+
+
+.item__link:focus{
+    color:rgb(246, 221, 147);
+}
+
+.menu-button{
+    display: none;
+}
+
+.navbar{
+
+    height: 880px;
+    margin-top: 930px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.91);
+    position: absolute;
+    z-index: 30;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .nav_mobile{
+        padding: 50px;
+        display: block;
+        
+    }
+    
+    .mobile__item{
+        padding: 10;
+        font-size: 1.6em;
+        text-decoration: none;
+    
+    }
+    .mobile__item a{
+        text-decoration: none;
+        color: rgb(255, 191, 0);
+    }
+    
+    .nav_mobile a {
+        font-size: 1.5em;
+    }
+    
+    .menu-button:not(:checked) ~ .navbar {
+        display: none;
+    
+    
+    }
+
+/*sección footer**/
+
+footer {
+    border: 1px solid black;
+    background-color: rgb(33, 33, 42);
+    width: 100%;
+    height: 150px;
+    display:flex;
+    justify-content: space-between;
+    align-items: end;
+
+}
+
+.footer-p{
+    color: rgb(255, 255, 255);
+    height: auto;
+    margin: 0;
+}
+
+.itemsfooter>li>a{
+    text-decoration: none;
+    color:rgb(255, 191, 0);
+    font-size: 1.1em;
+    margin:0 40px 30px 0; 
+    padding: 0;
+    
+}
+
+.itemsfooter{
+    margin: 0;
+    padding: 0;
+    height:115px;
+}
+
+li {
+    list-style-type: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.footer_icon {
+    width: 90px;
+    height: 90px;
+    right: 100px;
+    margin-bottom: 30px;
+}
+
+/*main pagina principal**/
+
+div>img {
+    width: 300px;
+}
+
+
+h2 {
+    text-align: center;
+}
+
+/* ---------maingrid página principal------------- */
+    .grid-container1{
+        display: grid;
+        grid-template-columns: minmax(200px,300px) minmax(200px,300px) minmax(200px,300px) minmax(200px,300px);
+        grid-template-rows: 60px 500px 60px 300px;
+        gap: 10px;
+        grid-template-areas: 
+        "subtittle_1 subtittle_1 subtittle_1 subtittle_1"
+        "article_1 article_1 article_2 article_2"
+        "subtittle_2 subtittle_2 subtittle_2 subtittle_2"
+        "article_3 article_4 article_5 article_6";
+        min-height: 100vh;
+        justify-content: center;
+        margin: 20px 0 30px 0;
+}
+
+.article:hover{
+    opacity: 0.6;
+}
+
+.subtittle{
+    background-color: rgba(0, 0, 0, 0.582);
+    color: rgba(213, 226, 238, 0.966);
+    font-size: 2.2em;
+    padding: 10px;
+}
+
+.subtittle_1{
+    grid-area: subtittle_1;
+}
+.subtittle_2{
+    grid-area: subtittle_2;
+}
+
+
+.article{
+    width: 100%;
+    height: 100%;
+}
+
+.article_1{
+    grid-area: article_1;
+    background-image: url(../images/guirnaldas-led.jpg);
+    background-size: cover;
+
+}
+
+.article_2{
+    grid-area: article_2;
+    background-image: url(../images/neon-led.jpg);
+    background-size: cover;
+}
+
+.article_3{
+    grid-area: article_3;
+    background-image: url(../images/focos8w.jpg);
+    background-size: cover;
+}
+
+.article_4{
+    grid-area: article_4;
+    background-image: url(../images/dicroica-led.jpg);
+    background-size: cover;
+}
+
+.article_5{
+    grid-area: article_5;
+    background-image: url(../images/foco-vintage.jpg);
+    background-size: cover;
+    background-position: bottom;
+
+}
+.article_6{
+    grid-area: article_6;
+    background-image: url(../images/tira-led-rgb.jpg);
+    background-size: cover;
+}
+
+
+
+/*main pagina contacto**/
+
+.containercontacto{
+    height: 380px;
+    display: inline-block;
+    position: relative;
+    width: 400px;
+    margin-left: 6px;
+}
+
+.contactodata1{
+    width: 400px;
+    height: 100px;
+    margin: 20px 0 20px 0;
+    
+    
+
+}
+.contactodata2{
+    width: 400px;
+    height: 250px;
+    
+
+}
+.contactodata3{
+    width: 400px;
+    align-content: center;
+    top:170px;
+    height: 507px;
+    right: 500px;
+
+}
+.contactodata4{
+    width: 500px;
+    right: 400px;
+    top:400px;
+    height: 200px;
+
+
+}
+
+.contactodata1 select{
+    display: flex;
+    margin-top: 9px;
+    width: 50%;
+    height: 30px;
+    border: none;
+    background-color: rgb(186, 194, 200);
+    border-bottom: 1px solid black;
+    
+}
+
+.contactodata2 input{
+    display: flex;
+    margin-top: 9px;
+    width: 70%;
+    height: 35px;
+    border: none;
+    background-color: rgb(186, 194, 200);
+    border-bottom: 1px solid black;
+}
+
+.contactodata4 textarea{
+    display: flex;
+    margin-top: 9px;
+    width: 400px;       
+    height: 150px;      
+    resize: none;       
+    overflow: auto;
+    border: none;
+    background-color: rgb(186, 194, 200);
+    border-bottom: 1px solid black;
+}
+
+.contactodata3 select{
+    display: flex;
+    margin: 5px;
+    margin-top: 9px;
+    width: 95%;
+    height: 30px;
+    border: none;
+    background-color: rgb(186, 194, 200);
+    border-bottom: 1px solid black;
+}
+
+
+label{
+    color: rgb(11, 19, 26);
+    font-size: 1.6em;
+}
+
+form{
+    position: relative;
+    display: flex;
+    margin-bottom: 500px;
+    justify-content: center;
+    margin: 40px 0 0 0;
+    font-family:'Times New Roman', Times, serif;
+    font-weight: bold;
+    background-color: rgba(220, 220, 225, 0.9);
+    min-height: 900px;
+    width: 100%;
+
+
+}
+
+.submit{
+    width: 200px;
+    height: 25px;
+    margin: 5px 0 0 20%;
+}
+
+/* ----main pagina secu leds---- */
+    .carousel-item img{
+        min-width: 400px;
+        max-width: 450px;
+    }
+
+    .container{
+        margin-bottom: 40px;
+    }
+
+    /* ----main página nosotros---- */
+    .container_info{
+        height: 100%;
+        width: 100%;
+        background-color:rgba(220, 220, 225, 0.9) ;
+        display: block;
+        justify-content: center;
+    }
+    .container_info>div{
+        height: 100%;
+        margin-top: 20px;
+        margin:20px 200px 0 200px;
+    }
+    .container_info>h2{
+        text-align: center;
+        font-size: 2.5em;
+
+    }
+
+    .container_info p {
+        font-size: 1.3em;
+        font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        
+    }
+
+
+
+
+    /*--------Media queries---------- */
+
+@media screen and (min-width:1441px){
+
+    .container_info>div{
+        height: 100%;
+        margin:20px 500px 20px 500px;
+    }
+
+}
+
+
+
+
+@media screen and (min-width:771px) {
+
+.menu_hamburguesa{
+    display: none;
+    }
+}
+
+
+    /* --tablet-- */
+
+@media screen and (max-width: 768px) {
+    /* ---nav---- */
+.nav{
+    display: none;
+    position: static;
+    z-index: 1;
+    }
+
+.menu_hamburguesa{
+    width: 100%;
+    height: 90px;
+    background-color: rgba(23, 23, 26);
+    position: static;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    }
+
+.menu-button{
+    width: 30px;
+    position: relative;
+    
+    }
+
+.menu_hamburguesa>label{
+    position: absolute;
+    font-size: 100px;
+    color: rgb(240, 194, 30);
+    margin-bottom: 40px;
+    text-shadow: 1px 0px 9px rgba(255, 248, 220, 0.858);
+    }
+    
+
+
+    /* ---main--- */
+
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: 60px 300px 60px 300px 300px;
+    gap: 10px;
+    grid-template-areas: 
+    "subtittle_1 subtittle_1"
+    "article_1 article_2"
+    "subtittle_2 subtittle_2"
+    "article_3 article_4"
+    "article_5 article_6";
+    height: 100%;
+    margin: 60px 100px 40px 100px;
+    } 
+
+    /* ----main nosotros---- */
+
+    .container_info>div{
+        height: 100%;
+        margin:20px 40px 0 40px;
+    }
+
+     /* ---mainend--- */
+
+
+}
+/* --tabletend-- */
+
+
+/* --mobile-- */
+
+@media screen and (min-width: 320px) and (max-width:767px){
+    /* ----main principal---- */ 
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(1,400px);
+    grid-template-rows: 60px 400px 400px 60px 400px 400px 400px 400px;
+    gap: 15px;
+    grid-template-areas: 
+    "subtittle_1"
+    "article_1"
+    "article_2"
+    "subtittle_2"
+    "article_3"
+    "article_4"
+    "article_5"
+    "article_6";
+    margin: 60px 2px 40px 2px;
+    min-height: 100vh;
+
+    }
+.subtittle_1,.subtittle_2{
+    font-size: 2em;
+    }
+
+        /* ----main contacto---- */
+    
+form{
+    display:block;
+    height:65%;
+}
+
+.containercontacto{
+    width: 99%;
+    height: 450px;
+    }
+
+.contactodata1{
+    width: 99%;
+    }
+
+.contactodata1 select{
+    width: 99%;
+    }
+
+.contactodata2{
+    width: 99%;
+    }
+.contactodata2 input{
+        width: 99%;
+    }
+
+.contactodata4{
+    width: 100%;
+    position: absolute;
+    right: auto;
+    margin-top: 250px;
+    justify-items: center;
+    }
+.contactodata4 textarea{
+    width: 99%;
+    }
+
+.contactodata3{
+    width: 100%;
+    height: 200px;
+    position: absolute;
+    right: auto;
+    top: 390px;
+
+    }
+.contactodata3 select{
+    width: 97%;
+    }
+.submit{
+    margin: 0;
+}
+
+/* -----main nosotros----- */
+
+.container_info>div{
+    height: 100%;
+    margin:20px 10px 20px 10px;
+}
+
+}
+
+/* --mobileend-- */
