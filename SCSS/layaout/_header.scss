@@ -1,0 +1,93 @@
+@import '../utilities/extend';
+@import '../utilities/mixins';
+@import '../utilities/variables';
+
+.divtitulo{
+    display: flex;
+    height: 200px;
+    background-color: $primary-color;
+    .titulo-principal{
+            font-size: 2em;
+            font-family:$secundary-font;
+            letter-spacing: 3;
+            color: $yellow;   
+            margin: auto;
+    }
+}
+
+.navba{
+    display: none;
+}
+
+    .menu_hamburguesa{
+        width: 100%;
+        height: 60px;
+        background-color: $primary-color;
+        position: static;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        .navbar{
+        height: 880px;
+        margin-top: 930px;
+        width: 100%;
+        background-color: $navbar-fondo;
+        position: absolute;
+        z-index: 30;
+        justify-items: center;
+        align-items: start;
+        justify-content: center;
+            .nav_mobile{
+                padding: 50px;
+                display: block;
+                .mobile__item{
+                    padding: 10;
+                    font-size: 1.6em;
+                    list-style: none;
+                    a {
+                        text-decoration: none;
+                        color: $yellow;
+                    }
+                }
+            }
+
+        }
+        .menu-button:not(:checked) ~ .navbar {
+        display: none;
+        }
+        .menu-button{
+        width: 30px;
+        position: relative;
+        }
+        label{
+        position: absolute;
+        font-size: 100px;
+        color: $yellow;
+        margin-bottom: 40px;
+        text-shadow: 1px 0px 9px $shadow-color;
+        }
+
+    }
+
+    .menu-button{
+        display:none;
+    }
+
+    .container_nav{
+        min-width: 100%;
+        display: none;
+        min-height: 50px;
+        .nav{
+        height: 100%;
+        min-width: 100%;
+        justify-content: center
+        ;
+        .nav__item{
+            align-content: center;
+            a{
+                padding: 0;
+            }
+
+        }
+    }
+}

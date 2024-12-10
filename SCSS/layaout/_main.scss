@@ -1,0 +1,139 @@
+//-----MAIN-BOOSTRAP-----//
+.carousel-item {
+    img{
+    min-width: 400px;
+    max-width: 450px;
+    }
+}
+
+.container{
+    margin-bottom: 40px;
+    .subtittle{
+        text-align: center;
+        background-color: $black-transtarent;
+        color: $white;
+        margin: 15px 0 10px 0;
+    }
+}
+
+.article:hover{
+    opacity: 0.6;
+}
+
+//-----MAIN-BOOSTRAP-FIN-----//
+//-----MAIN-CONTACTO-----//
+
+
+    .form{
+        justify-content: center;
+        font-family:$primary-font;
+        font-weight: bold;
+        background-color: rgba(220, 220, 225, 0.9);
+        display:block;
+        height:70%;
+        justify-content:center;
+
+    .containercontacto{
+        width: 99%;
+        height: 450px;
+
+    .contactodata1{
+        width: 99%;
+        
+
+        select{
+            @include button-style ($grey ,$border:none , $b-bottom:1px solid $secundary-color ,$color: $tertiari-color);
+            width:100%;
+            height: 40px;
+
+        }
+
+}
+    .contactodata2{
+        width: 99%;
+        margin-top: 5px;
+
+        input{
+            @include button-style ($grey ,$border:none , $b-bottom:1px solid $secundary-color ,$color: $tertiari-color);
+            width: 100%;
+            height: 40px;
+            
+
+    }
+
+}
+    .contactodata4{
+        width: 100%;
+        position: absolute;
+        height: 125px;
+        bottom: -20px;
+        
+
+        textarea{
+            @include button-style ($grey ,$border:none , $b-bottom:1px solid $secundary-color ,$color: $tertiari-color);
+            resize: none;       
+            overflow: auto;
+            width: 100%;
+            height: 100px;
+
+        }
+        .container-submit{
+            height: 30px;
+            justify-content: center;
+            display: flex;
+
+        .submit{
+            width: 130px;
+            @include button-style ($grey-claro ,$border:none , $b-bottom:1px solid $secundary-color ,$color: $primary-color);
+            
+        }
+}
+
+        }
+    }
+        .contactodata3{
+            width: 100%;
+            height: 100px;
+            position: absolute;
+            top: 528px;
+
+    select{
+        @include button-style ($grey ,$border:none , $b-bottom:1px solid $secundary-color ,$color: $tertiari-color);
+        width: 100%;
+        height: 40px;
+
+        }
+
+    }
+}
+
+
+label{
+    color: rgb(11, 19, 26);
+    margin-left: 6px;
+    font-size: 1.2em;
+    
+}
+//-----MAIN-CONTACTO-FIN-----//
+//-----MAIN-NOSOTROS-----//
+
+.container_info{
+        height: 100vh;
+        width: 100%;
+        background-color:rgba(220, 220, 225, 0.9) ;
+        justify-content: center;
+    h2{
+        text-align: center;
+        font-size: 2.5em;
+
+    }
+    div{
+        margin: 0 6px 0 6px;
+        p{
+            font-size: 1.1em;
+            font-family:$primary-font;
+        }
+        
+    }
+}
+        //-----MAIN-NOSOTROS-FIN-----//

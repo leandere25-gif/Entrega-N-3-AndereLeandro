@@ -1,0 +1,21 @@
+@mixin grid-tittle ($bg-color , $color , $font-size , $padding , $text-aling){
+background-color:$bg-color;
+color: $color;
+font-size:$font-size;
+padding:$padding;
+text-align: $text-aling;
+
+}
+
+@mixin grid-item ($bg-size , $width , $height ){
+    background-size:$bg-size;
+    width:$width;
+    height:$height;
+}
+
+@mixin button-style ($bg-color, $border , $b-bottom , $color){
+    background-color:$bg-color ;
+    border: $border;
+    border-bottom:$b-bottom ;
+    color: $color;
+}

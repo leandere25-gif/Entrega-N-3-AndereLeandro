@@ -1,0 +1,33 @@
+@font-face {
+    font-family: AtacadFlux-Regular ;
+    src: url(fonts/Afacad_Flux/static/AfacadFlux-Regular.ttf);
+}
+
+@font-face {
+    font-family: AfacadFlux-Bold ;
+    src: url(fonts/Afacad_Flux/static/AfacadFlux-Bold.ttf);
+}
+
+@font-face {
+    font-family:Teko-Regular;
+    src: url(fonts/static/Teko-Regular.ttf);
+}
+
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-image: url(../../assets/images/backgroundbody.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+
+main{
+    flex-grow: 1;
+}

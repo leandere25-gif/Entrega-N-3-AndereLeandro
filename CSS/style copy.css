@@ -1,7 +1,7 @@
 
 /*sección de header y nav*/
 
-@font-face {
+/* @font-face {
     font-family: AtacadFlux-Regular ;
     src: url(fonts/Afacad_Flux/static/AfacadFlux-Regular.ttf);
 }
@@ -20,22 +20,22 @@
     margin:0;
     padding:0;
     box-sizing: border-box;
-}
+} */
 
 
-body{
+/*body{
     background-image: url(../images/backgroundbody.jpg);
     background-size:cover;
-    background-attachment: fixed;
-    background-color: rgba(240, 248, 255, 0.036);
-    display: flex;
+    background-attachment: fixed; */
+    /* background-color: rgba(240, 248, 255, 0.036); */
+    /* display: flex;
     flex-direction: column;
-    height: 100vh;
-}
+    height: 100vh;  
+} */
 
-main{
+/* main{
     flex-grow: 1;
-}
+} */
 
 .encabezado{
     background-color: rgb(29, 27, 37);
@@ -45,22 +45,22 @@ main{
 }
 
 
-.titulo-principal{
+/* .titulo-principal{
     font-size: 3.5em;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ,Teko-Regular;
     letter-spacing: 3;
     color: rgb(255,191,0);   
     margin: auto;
-}
+} */
 
-.divtitulo {
+/* .divtitulo {
     display: flex;
     height: 200px;
     background-color: rgb(33, 33, 42);
-}
+} */
 
 
-.nav{
+/* .nav{
     height: 45px;
     margin: 0;
     padding: 0;
@@ -70,9 +70,9 @@ main{
     width: 100%;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
 
-}
+/* }
 
 .nav__item {
     
@@ -80,34 +80,31 @@ main{
     text-decoration: none;
     margin: 0 20px 0 20px
 
-}
+} */
 
-.nav__item a{
+/* .nav__item a{
     text-decoration: none;
     color:rgb(255, 191, 0);
     font-size: 1em;
 
-}
+} */
 
-.nav__item:hover{
+/* .nav__item:hover{
     background-color: #333a;
     transition: all 0.3s;
     border-radius: 15px;
-    
-    
-
-}
+} */
 
 
-.item__link:focus{
+/* .item__link:focus{
     color:rgb(246, 221, 147);
-}
+} */
 
-.menu-button{
+/* .menu-button{
     display: none;
-}
+} */
 
-.navbar{
+/* .navbar{
 
     height: 880px;
     margin-top: 930px;
@@ -118,80 +115,80 @@ main{
     justify-items: center;
     align-items: center;
     justify-content: center;
-    }
+    } */
     
-    .nav_mobile{
+    /* .nav_mobile{
         padding: 50px;
         display: block;
         
-    }
+    } */
     
-    .mobile__item{
+    /* .mobile__item{
         padding: 10;
         font-size: 1.6em;
         text-decoration: none;
     
-    }
-    .mobile__item a{
+    } */
+    /* .mobile__item a{
         text-decoration: none;
         color: rgb(255, 191, 0);
-    }
+    } */
     
-    .nav_mobile a {
+    /* .nav_mobile a {
         font-size: 1.5em;
-    }
+    } */
     
-    .menu-button:not(:checked) ~ .navbar {
+    /* .menu-button:not(:checked) ~ .navbar {
         display: none;
     
     
-    }
+    } */
 
 /*sección footer**/
 
-footer {
+/* footer {
     border: 1px solid black;
     background-color: rgb(33, 33, 42);
     width: 100%;
     height: 150px;
     display:flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: end; 
 
 }
-
-.footer-p{
+*/
+/* .footer-p{
     color: rgb(255, 255, 255);
     height: auto;
     margin: 0;
-}
+} */
 
-.itemsfooter>li>a{
+/* .itemsfooter>li>a{
     text-decoration: none;
     color:rgb(255, 191, 0);
     font-size: 1.1em;
     margin:0 40px 30px 0; 
     padding: 0;
     
-}
+} */
 
-.itemsfooter{
+/* .itemsfooter{
     margin: 0;
     padding: 0;
     height:115px;
-}
+} */
 
-li {
+/* li {
     list-style-type: none;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+} */
 
-.footer_icon {
+/* .footer_icon {
     width: 90px;
     height: 90px;
     right: 100px;
     margin-bottom: 30px;
-}
+} */
 
 /*main pagina principal**/
 
@@ -205,7 +202,7 @@ h2 {
 }
 
 /* ---------maingrid página principal------------- */
-    .grid-container1{
+    /* .grid-container1{
         display: grid;
         grid-template-columns: minmax(200px,300px) minmax(200px,300px) minmax(200px,300px) minmax(200px,300px);
         grid-template-rows: 60px 500px 60px 300px;
@@ -218,13 +215,13 @@ h2 {
         min-height: 100vh;
         justify-content: center;
         margin: 20px 0 30px 0;
-}
+} */
 
-.article:hover{
+/* .article:hover{
     opacity: 0.6;
-}
+} */
 
-.subtittle{
+/* .subtittle{
     background-color: rgba(0, 0, 0, 0.582);
     color: rgba(213, 226, 238, 0.966);
     font-size: 2.2em;
@@ -280,13 +277,13 @@ h2 {
     grid-area: article_6;
     background-image: url(../images/tira-led-rgb.jpg);
     background-size: cover;
-}
+} */
 
 
 
 /*main pagina contacto**/
 
-.containercontacto{
+/* .containercontacto{
     height: 380px;
     display: inline-block;
     position: relative;
@@ -394,17 +391,17 @@ form{
     width: 200px;
     height: 25px;
     margin: 5px 0 0 20%;
-}
+} */
 
 /* ----main pagina secu leds---- */
-    .carousel-item img{
+    /* .carousel-item img{
         min-width: 400px;
         max-width: 450px;
-    }
+    } */
 
-    .container{
+    /* .container{
         margin-bottom: 40px;
-    }
+    } */
 
     /* ----main página nosotros---- */
     .container_info{
@@ -448,25 +445,25 @@ form{
 
 
 
-@media screen and (min-width:771px) {
+/*@media screen and (min-width:771px) {
 
-.menu_hamburguesa{
+/* .menu_hamburguesa{
     display: none;
     }
-}
+} */
 
 
     /* --tablet-- */
 
-@media screen and (max-width: 768px) {
+/*@media screen and (max-width: 768px) {
     /* ---nav---- */
-.nav{
+/* .nav{
     display: none;
     position: static;
     z-index: 1;
-    }
+    } */
 
-.menu_hamburguesa{
+/* .menu_hamburguesa{
     width: 100%;
     height: 90px;
     background-color: rgba(23, 23, 26);
@@ -474,27 +471,27 @@ form{
     display: flex;
     justify-content: end;
     align-items: center;
-    }
+    } */
 
-.menu-button{
+/* .menu-button{
     width: 30px;
     position: relative;
     
-    }
+    } */
 
-.menu_hamburguesa>label{
+/* .menu_hamburguesa>label{
     position: absolute;
     font-size: 100px;
     color: rgb(240, 194, 30);
     margin-bottom: 40px;
     text-shadow: 1px 0px 9px rgba(255, 248, 220, 0.858);
     }
-    
+     */
 
 
     /* ---main--- */
 
-.grid-container1{
+/* .grid-container1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-rows: 60px 300px 60px 300px 300px;
@@ -507,7 +504,7 @@ form{
     "article_5 article_6";
     height: 100%;
     margin: 60px 100px 40px 100px;
-    } 
+    }  */
 
     /* ----main nosotros---- */
 
@@ -527,7 +524,7 @@ form{
 
 @media screen and (min-width: 320px) and (max-width:767px){
     /* ----main principal---- */ 
-.grid-container1{
+/* .grid-container1{
     display: grid;
     grid-template-columns: repeat(1,400px);
     grid-template-rows: 60px 400px 400px 60px 400px 400px 400px 400px;
@@ -544,14 +541,14 @@ form{
     margin: 60px 2px 40px 2px;
     min-height: 100vh;
 
-    }
-.subtittle_1,.subtittle_2{
+    } */
+/* .subtittle_1,.subtittle_2{
     font-size: 2em;
-    }
+    } */
 
         /* ----main contacto---- */
     
-form{
+/* form{
     display:block;
     height:65%;
 }
@@ -563,6 +560,7 @@ form{
 
 .contactodata1{
     width: 99%;
+    
     }
 
 .contactodata1 select{
@@ -600,7 +598,7 @@ form{
     }
 .submit{
     margin: 0;
-}
+} */
 
 /* -----main nosotros----- */
 

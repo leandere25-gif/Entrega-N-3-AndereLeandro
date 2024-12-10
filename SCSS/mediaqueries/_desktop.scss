@@ -1,0 +1,133 @@
+@media screen and (min-width:1024px){
+
+    //-----MAIN-GRID-----//
+    .grid-container1{
+        display: grid;
+        grid-template-columns: repeat(4 ,minmax(50px , 300px));
+        grid-template-rows: 60px 500px 60px 300px;
+        gap: 10px;
+        grid-template-areas: 
+        "subtittle_1 subtittle_1 subtittle_1 subtittle_1"
+        "article_1 article_1 article_2 article_2"
+        "subtittle_2 subtittle_2 subtittle_2 subtittle_2"
+        "article_3 article_4 article_5 article_6";
+        min-height: 100vh;
+        justify-content: center;
+        margin: 20px 30px 30px 30px;
+    }
+    //-----MAIN-GRID-FIN-----//
+    //-----MAIN-CONTACTO-----//
+    
+    .form{
+        position: relative;
+        display: flex;
+        min-height: 900px;
+        width: 100%;
+        justify-content: center;
+
+
+        .containercontacto{
+            height: 380px;
+            display: inline-block;
+            position: relative;
+            width: 600px;
+            top: 0;
+    
+        .contactodata1{
+            width: 400px;
+            height: 100px;
+            margin: 20px 0 20px 0;
+    
+            select{
+                display: flex;
+                margin-top: 9px;
+                width: 70%;
+                height: 35px;
+            }
+    
+    }
+        .contactodata2{
+            width: 400px;
+            height: 250px;
+            display:block;
+    
+            input{
+                display: flex;
+                margin-top: 9px;
+                width: 70%;
+                height: 35px;
+        }
+    
+    }
+        .contactodata4{
+            width: 500px;
+            top:400px;
+            height: 200px;
+            
+    
+            textarea{
+                display: flex;
+                margin-top: 9px;
+                width: 500px;       
+                height: 150px;              
+            }
+            .container-submit{
+                height: 30px;
+                justify-content: center;
+                display: flex;
+    
+            .submit{
+                width: 130px;
+                
+            }
+    }
+    
+            }
+        }
+            .contactodata3{
+                width: 280px;
+                align-content: center;
+                top:150px;
+                height: 240px;
+                right: 190px;
+                position: relative ;
+    
+        select{
+            display: flex;
+            margin: 5px;
+            margin-top: 9px;
+            width: 400px;
+            height: 35px;
+    }
+    
+        }
+    }
+    
+    
+    label{
+        font-size: 1.6em;           
+    }
+
+    //-----MAIN-NOSOTROS-----//
+    .container_info{
+        height: 100vh;
+        width: 100%;
+        display: block;
+        justify-content: center;
+    h2{
+        text-align: center;
+        font-size: 2.5em;
+    
+    }
+    div{
+        height: 100%;
+        margin:20px 200px 0 200px;
+        p{
+            font-size: 1.3em;            
+        }
+        
+    }
+}
+        //-----MAIN-NOSOTROS-FIN-----//
+
+}

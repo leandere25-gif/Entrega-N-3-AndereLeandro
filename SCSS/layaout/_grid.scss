@@ -1,0 +1,68 @@
+//-----GRID-MAIN-----//
+.grid-container1{
+    display: grid;
+    grid-template-columns: repeat(1,400px);
+    grid-template-rows: 60px 400px 400px 60px 400px 400px 400px 400px;
+    gap: 15px;
+    grid-template-areas: 
+    "subtittle_1"
+    "article_1"
+    "article_2"
+    "subtittle_2"
+    "article_3"
+    "article_4"
+    "article_5"
+    "article_6";
+    margin: 60px 2px 40px 2px;
+    min-height: 100vh;
+    justify-content: center;
+}
+
+
+.subtittle_1{
+    grid-area: subtittle_1;
+    @include grid-tittle ($black-transtarent,rgba(213, 226, 238, 0.966),1.8em,10px,center);
+}
+.subtittle_2{
+    grid-area: subtittle_2;
+    @include grid-tittle ($black-transtarent,rgba(213, 226, 238, 0.966),1.8em,10px,center);
+}
+
+
+.article_1{
+    grid-area: article_1;
+    background-image: url(../../assets/images/guirnaldas-led.jpg);
+    @include grid-item (cover, 100% ,100%);
+
+}
+
+.article_2{
+    grid-area: article_2;
+    background-image: url(../../assets/images/neon-led.jpg);
+    @include grid-item (cover, 100% ,100%);
+}
+
+.article_3{
+    grid-area: article_3;
+    background-image: url(../../assets/images/focos8w.jpg);
+    @include grid-item (cover, 100% ,100%);
+}
+
+.article_4{
+    grid-area: article_4;
+    background-image: url(../../assets/images/dicroica-led.jpg);
+    @include grid-item (cover, 100% ,100%);
+}
+
+.article_5{
+    grid-area: article_5;
+    background-image: url(../../assets/images/foco-vintage.jpg);
+    background-position: bottom;
+    @include grid-item (cover, 100% ,100%);
+
+}
+.article_6{
+    grid-area: article_6;
+    background-image: url(../../assets/images/tira-led-rgb.jpg);
+    @include grid-item (cover, 100% ,100%);
+}

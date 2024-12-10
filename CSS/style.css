@@ -1,0 +1,629 @@
+@font-face {
+  font-family: AtacadFlux-Regular;
+  src: url(fonts/Afacad_Flux/static/AfacadFlux-Regular.ttf);
+}
+@font-face {
+  font-family: AfacadFlux-Bold;
+  src: url(fonts/Afacad_Flux/static/AfacadFlux-Bold.ttf);
+}
+@font-face {
+  font-family: Teko-Regular;
+  src: url(fonts/static/Teko-Regular.ttf);
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-image: url(../../assets/images/backgroundbody.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+main {
+  flex-grow: 1;
+}
+
+.divtitulo {
+  display: flex;
+  height: 200px;
+  background-color: rgb(33, 33, 42);
+}
+.divtitulo .titulo-principal {
+  font-size: 2em;
+  font-family: AtacadFlux-Regular;
+  letter-spacing: 3;
+  color: rgb(255, 191, 0);
+  margin: auto;
+}
+
+.navba {
+  display: none;
+}
+
+.menu_hamburguesa {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(33, 33, 42);
+  position: static;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.menu_hamburguesa .navbar {
+  height: 880px;
+  margin-top: 930px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.91);
+  position: absolute;
+  z-index: 30;
+  justify-items: center;
+  align-items: start;
+  justify-content: center;
+}
+.menu_hamburguesa .navbar .nav_mobile {
+  padding: 50px;
+  display: block;
+}
+.menu_hamburguesa .navbar .nav_mobile .mobile__item {
+  padding: 10;
+  font-size: 1.6em;
+  list-style: none;
+}
+.menu_hamburguesa .navbar .nav_mobile .mobile__item a {
+  text-decoration: none;
+  color: rgb(255, 191, 0);
+}
+.menu_hamburguesa .menu-button:not(:checked) ~ .navbar {
+  display: none;
+}
+.menu_hamburguesa .menu-button {
+  width: 30px;
+  position: relative;
+}
+.menu_hamburguesa label {
+  position: absolute;
+  font-size: 100px;
+  color: rgb(255, 191, 0);
+  margin-bottom: 40px;
+  text-shadow: 1px 0px 9px rgba(255, 248, 220, 0.858);
+}
+
+.menu-button {
+  display: none;
+}
+
+.container_nav {
+  min-width: 100%;
+  display: none;
+  min-height: 50px;
+}
+.container_nav .nav {
+  height: 100%;
+  min-width: 100%;
+  justify-content: center;
+}
+.container_nav .nav .nav__item {
+  align-content: center;
+}
+.container_nav .nav .nav__item a {
+  padding: 0;
+}
+
+.carousel-item img {
+  min-width: 400px;
+  max-width: 450px;
+}
+
+.container {
+  margin-bottom: 40px;
+}
+.container .subtittle {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: rgb(255, 255, 255);
+  margin: 15px 0 10px 0;
+}
+
+.article:hover {
+  opacity: 0.6;
+}
+
+.form {
+  justify-content: center;
+  font-family: Teko-Regular;
+  font-weight: bold;
+  background-color: rgba(220, 220, 225, 0.9);
+  display: block;
+  height: 70%;
+  justify-content: center;
+}
+.form .containercontacto {
+  width: 99%;
+  height: 450px;
+}
+.form .containercontacto .contactodata1 {
+  width: 99%;
+}
+.form .containercontacto .contactodata1 select {
+  background-color: rgb(186, 194, 200);
+  border: none;
+  border-bottom: 1px solid black;
+  color: rgb(94, 95, 123);
+  width: 100%;
+  height: 40px;
+}
+.form .containercontacto .contactodata2 {
+  width: 99%;
+  margin-top: 5px;
+}
+.form .containercontacto .contactodata2 input {
+  background-color: rgb(186, 194, 200);
+  border: none;
+  border-bottom: 1px solid black;
+  color: rgb(94, 95, 123);
+  width: 100%;
+  height: 40px;
+}
+.form .containercontacto .contactodata4 {
+  width: 100%;
+  position: absolute;
+  height: 125px;
+  bottom: -20px;
+}
+.form .containercontacto .contactodata4 textarea {
+  background-color: rgb(186, 194, 200);
+  border: none;
+  border-bottom: 1px solid black;
+  color: rgb(94, 95, 123);
+  resize: none;
+  overflow: auto;
+  width: 100%;
+  height: 100px;
+}
+.form .containercontacto .contactodata4 .container-submit {
+  height: 30px;
+  justify-content: center;
+  display: flex;
+}
+.form .containercontacto .contactodata4 .container-submit .submit {
+  width: 130px;
+  background-color: rgba(213, 226, 238, 0.966);
+  border: none;
+  border-bottom: 1px solid black;
+  color: rgb(33, 33, 42);
+}
+.form .contactodata3 {
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  top: 528px;
+}
+.form .contactodata3 select {
+  background-color: rgb(186, 194, 200);
+  border: none;
+  border-bottom: 1px solid black;
+  color: rgb(94, 95, 123);
+  width: 100%;
+  height: 40px;
+}
+
+label {
+  color: rgb(11, 19, 26);
+  margin-left: 6px;
+  font-size: 1.2em;
+}
+
+.container_info {
+  height: 100vh;
+  width: 100%;
+  background-color: rgba(220, 220, 225, 0.9);
+  justify-content: center;
+}
+.container_info h2 {
+  text-align: center;
+  font-size: 2.5em;
+}
+.container_info div {
+  margin: 0 6px 0 6px;
+}
+.container_info div p {
+  font-size: 1.1em;
+  font-family: Teko-Regular;
+}
+
+.grid-container1 {
+  display: grid;
+  grid-template-columns: repeat(1, 400px);
+  grid-template-rows: 60px 400px 400px 60px 400px 400px 400px 400px;
+  gap: 15px;
+  grid-template-areas: "subtittle_1" "article_1" "article_2" "subtittle_2" "article_3" "article_4" "article_5" "article_6";
+  margin: 60px 2px 40px 2px;
+  min-height: 100vh;
+  justify-content: center;
+}
+
+.subtittle_1 {
+  grid-area: subtittle_1;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: rgba(213, 226, 238, 0.966);
+  font-size: 1.8em;
+  padding: 10px;
+  text-align: center;
+}
+
+.subtittle_2 {
+  grid-area: subtittle_2;
+  background-color: rgba(0, 0, 0, 0.548);
+  color: rgba(213, 226, 238, 0.966);
+  font-size: 1.8em;
+  padding: 10px;
+  text-align: center;
+}
+
+.article_1 {
+  grid-area: article_1;
+  background-image: url(../../assets/images/guirnaldas-led.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article_2 {
+  grid-area: article_2;
+  background-image: url(../../assets/images/neon-led.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article_3 {
+  grid-area: article_3;
+  background-image: url(../../assets/images/focos8w.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article_4 {
+  grid-area: article_4;
+  background-image: url(../../assets/images/dicroica-led.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article_5 {
+  grid-area: article_5;
+  background-image: url(../../assets/images/foco-vintage.jpg);
+  background-position: bottom;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+.article_6 {
+  grid-area: article_6;
+  background-image: url(../../assets/images/tira-led-rgb.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+}
+
+footer {
+  border: 1px solid black;
+  background-color: rgb(33, 33, 42);
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+}
+footer .footer_icon {
+  width: 90px;
+  height: 90px;
+  right: 100px;
+  margin-bottom: 30px;
+}
+footer .footer-p {
+  color: rgb(255, 255, 255);
+  height: auto;
+  margin: 0;
+  font-size: 0.6em;
+}
+footer .itemsfooter {
+  margin: 0;
+  padding: 0;
+  height: 115px;
+}
+footer .itemsfooter li {
+  list-style-type: none;
+  font-family: Teko-Regular;
+}
+footer .itemsfooter > li > a {
+  text-decoration: none;
+  color: rgb(255, 191, 0);
+  font-size: 0.7em;
+  margin: 0 40px 30px 0;
+  padding: 0;
+}
+footer .icon-ws {
+  position: fixed;
+  right: 10px;
+  bottom: 20px;
+}
+footer .icon-ws img {
+  width: 55px;
+  height: 55px;
+  transition: transform 2s ease-in-out;
+}
+
+img:hover {
+  transform: rotate(360deg);
+}
+
+@media screen and (min-width: 750px) {
+  nav {
+    width: 100%;
+    height: 50px;
+    background-color: rgb(33, 33, 42);
+  }
+  nav .nav {
+    height: 70px;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(23, 23, 26);
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav .nav .nav__item {
+    height: 100%;
+    font-size: 1.5em;
+    text-decoration: none;
+    padding: 0 15px 0 15px;
+  }
+  nav .nav .nav__item a {
+    text-decoration: none;
+    color: rgb(255, 191, 0);
+    font-size: 1em;
+  }
+  nav .menu_hamburguesa {
+    display: none;
+  }
+  .nav__item:hover {
+    background-color: rgba(51, 51, 51, 0.6666666667);
+    transition: all 0.3s;
+    border-radius: 15px;
+    padding: 0px;
+  }
+  .item__link:focus {
+    color: rgb(246, 221, 147);
+  }
+  .container_nav {
+    height: 100%;
+    align-content: center;
+    display: flex;
+    text-align: center;
+  }
+  .container_nav .nav {
+    height: 100%;
+  }
+  footer .footer-p {
+    font-size: 1em;
+  }
+  footer .itemsfooter {
+    font-size: 1.2em;
+    align-self: center;
+  }
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 60px 300px 60px 300px 300px;
+    gap: 10px;
+    grid-template-areas: "subtittle_1 subtittle_1" "article_1 article_2" "subtittle_2 subtittle_2" "article_3 article_4" "article_5 article_6";
+    height: 100%;
+    margin: 60px 100px 40px 100px;
+  }
+  .form {
+    position: relative;
+    display: flex;
+    min-height: 900px;
+    width: 100%;
+  }
+  .form .containercontacto {
+    height: 380px;
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    top: 0;
+  }
+  .form .containercontacto .contactodata1 {
+    width: 400px;
+    height: 100px;
+    margin: 20px 0 20px 0;
+  }
+  .form .containercontacto .contactodata1 select {
+    display: flex;
+    margin-top: 9px;
+    width: 280px;
+    height: 35px;
+  }
+  .form .containercontacto .contactodata2 {
+    width: 400px;
+    height: 250px;
+    display: block;
+  }
+  .form .containercontacto .contactodata2 input {
+    display: flex;
+    margin-top: 9px;
+    width: 70%;
+    height: 35px;
+  }
+  .form .containercontacto .contactodata4 {
+    width: 500px;
+    top: 400px;
+    height: 200px;
+  }
+  .form .containercontacto .contactodata4 textarea {
+    display: flex;
+    margin-top: 9px;
+    width: 500px;
+    height: 150px;
+  }
+  .form .containercontacto .contactodata4 .container-submit {
+    height: 30px;
+    justify-content: center;
+    display: flex;
+  }
+  .form .containercontacto .contactodata4 .container-submit .submit {
+    width: 130px;
+  }
+  .form .contactodata3 {
+    width: 280px;
+    align-content: center;
+    top: 150px;
+    height: 200px;
+    right: 110px;
+  }
+  .form .contactodata3 select {
+    display: flex;
+    margin: 5px;
+    margin-top: 9px;
+    width: 95%;
+    height: 35px;
+  }
+  label {
+    font-size: 1.6em;
+  }
+}
+.container_info {
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+}
+.container_info h2 {
+  text-align: center;
+  font-size: 2.5em;
+  top: 10px;
+}
+.container_info div {
+  height: 100vh;
+  margin: 20px 40px 0 40px;
+}
+.container_info div p {
+  font-size: 1.1em;
+}
+
+@media screen and (min-width: 1024px) {
+  .grid-container1 {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(50px, 300px));
+    grid-template-rows: 60px 500px 60px 300px;
+    gap: 10px;
+    grid-template-areas: "subtittle_1 subtittle_1 subtittle_1 subtittle_1" "article_1 article_1 article_2 article_2" "subtittle_2 subtittle_2 subtittle_2 subtittle_2" "article_3 article_4 article_5 article_6";
+    min-height: 100vh;
+    justify-content: center;
+    margin: 20px 30px 30px 30px;
+  }
+  .form {
+    position: relative;
+    display: flex;
+    min-height: 900px;
+    width: 100%;
+    justify-content: center;
+  }
+  .form .containercontacto {
+    height: 380px;
+    display: inline-block;
+    position: relative;
+    width: 600px;
+    top: 0;
+  }
+  .form .containercontacto .contactodata1 {
+    width: 400px;
+    height: 100px;
+    margin: 20px 0 20px 0;
+  }
+  .form .containercontacto .contactodata1 select {
+    display: flex;
+    margin-top: 9px;
+    width: 70%;
+    height: 35px;
+  }
+  .form .containercontacto .contactodata2 {
+    width: 400px;
+    height: 250px;
+    display: block;
+  }
+  .form .containercontacto .contactodata2 input {
+    display: flex;
+    margin-top: 9px;
+    width: 70%;
+    height: 35px;
+  }
+  .form .containercontacto .contactodata4 {
+    width: 500px;
+    top: 400px;
+    height: 200px;
+  }
+  .form .containercontacto .contactodata4 textarea {
+    display: flex;
+    margin-top: 9px;
+    width: 500px;
+    height: 150px;
+  }
+  .form .containercontacto .contactodata4 .container-submit {
+    height: 30px;
+    justify-content: center;
+    display: flex;
+  }
+  .form .containercontacto .contactodata4 .container-submit .submit {
+    width: 130px;
+  }
+  .form .contactodata3 {
+    width: 280px;
+    align-content: center;
+    top: 150px;
+    height: 240px;
+    right: 190px;
+    position: relative;
+  }
+  .form .contactodata3 select {
+    display: flex;
+    margin: 5px;
+    margin-top: 9px;
+    width: 400px;
+    height: 35px;
+  }
+  label {
+    font-size: 1.6em;
+  }
+  .container_info {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    justify-content: center;
+  }
+  .container_info h2 {
+    text-align: center;
+    font-size: 2.5em;
+  }
+  .container_info div {
+    height: 100%;
+    margin: 20px 200px 0 200px;
+  }
+  .container_info div p {
+    font-size: 1.3em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
