@@ -1,0 +1,115 @@
+// ----animationLogoWsp-----//
+    //-----animationLogoWsp-----//
+    @keyframes logows {
+        from{
+            transform: rotate(15deg);
+        }
+        to{
+            transform: rotate(15deg);
+        }
+    }
+    
+    .icon-ws:hover{
+        animation-name: logows;
+        animation-duration: 0.01s;
+        animation-direction: alternate-reverse;
+        animation-iteration-count: infinite;
+        animation-timing-function:ease-in-out;
+        filter:drop-shadow(0 0 9px green);
+    }
+
+
+
+// ---------------------------------------
+
+// -----animationIconoFooter-----
+
+@keyframes intermitente{
+    10% {
+    filter:drop-shadow(0 0 5px $yellow-claro);
+
+    }
+    25%{
+    filter:drop-shadow(0 0 6px $yellow-claro);
+
+    }
+    35%{
+    filter:drop-shadow(0 0 9px $yellow-claro);
+    }
+    45%{
+    filter:drop-shadow(0 0 6px $yellow-claro);
+    }
+    65%{
+        filter:drop-shadow(0 0 11px $yellow-claro);
+    }
+    75%{
+        filter:drop-shadow(0 0 6px $yellow-claro);
+    }
+    85%{
+        filter:drop-shadow(0 0 12px $yellow-claro);
+    }
+    100%{
+        filter:drop-shadow(0 0 16px $yellow-claro);
+    }
+}
+
+.footer_icon{
+animation-name: intermitente;
+animation-duration: 5s;
+animation-iteration-count: infinite;
+animation-timing-function: linear;
+animation-fill-mode: both;
+filter:drop-shadow(0 0 13px $yellow-claro);
+}
+// ------------------------------------------------------
+
+
+    //-----animationLogoWsp-----//
+@keyframes logows {
+    from{
+        transform: rotate(20deg);
+    }
+    to{
+        transform: rotate(0deg);
+
+    }
+}
+
+.icon-ws:hover{
+    animation-name: logows;
+    animation-duration: 0.3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+
+// -----Botón-----
+
+@keyframes BotonClick{
+    25%{
+        background-color: rgb(173, 173, 168);
+        border-top: 2px solid white;
+    }
+    50%{
+        background-color: rgba(199, 198, 196, 0.856);
+        border-right: 2px solid white;
+    }
+    75%{
+        background-color:rgba(224, 223, 219, 0.856);
+        border-bottom: 2px solid white;
+    }
+    100%{
+        background-color:rgba(233, 231, 229, 0.856);
+        border-left: 2px solid white;
+    }
+}
+
+.submit:hover{
+    animation-name:BotonClick;
+    background-color: rgb(255, 255, 255);
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate-reverse;
+
+}

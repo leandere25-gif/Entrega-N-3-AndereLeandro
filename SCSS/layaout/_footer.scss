@@ -8,10 +8,10 @@ footer {
         align-items: end;
     
     .footer_icon {
-        width: 90px;
-        height: 90px;
-        right: 100px;
-        margin-bottom: 30px;
+        width: 70px;
+        height: 70px;
+        right: 30px;
+        margin: 0 0 30px 15px;
     }
 
     .footer-p{
@@ -19,6 +19,7 @@ footer {
         height: auto;
         margin: 0;
         font-size: 0.6em;
+        position: absolute;
     }
 
     .itemsfooter{
@@ -28,6 +29,10 @@ footer {
     li {
         list-style-type: none;
         font-family: $primary-font;
+        img{
+            width: 23px;
+            height: 23px;
+        }
         }
     }
     .itemsfooter>li>a{
@@ -44,14 +49,11 @@ footer {
         img{
         width: 55px; 
         height: 55px; 
-        transition: transform 2s ease-in-out;
-
         }
 
     }
 }
 
-img:hover{
-    transform: rotate(360deg);
-    
+.itemsfooter>li>a:hover{
+    color: rgb(249, 226, 165);
 }

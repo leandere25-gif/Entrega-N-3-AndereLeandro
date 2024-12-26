@@ -50,7 +50,6 @@ main {
   width: 100%;
   height: 60px;
   background-color: rgb(33, 33, 42);
-  position: static;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -86,12 +85,10 @@ main {
   width: 30px;
   position: relative;
 }
-.menu_hamburguesa label {
-  position: absolute;
-  font-size: 100px;
-  color: rgb(255, 191, 0);
-  margin-bottom: 40px;
-  text-shadow: 1px 0px 9px rgba(255, 248, 220, 0.858);
+.menu_hamburguesa label img {
+  width: 40px;
+  margin-right: 10px;
+  filter: drop-shadow(0 0 4px rgb(255, 191, 0));
 }
 
 .menu-button {
@@ -138,17 +135,17 @@ main {
   justify-content: center;
   font-family: Teko-Regular;
   font-weight: bold;
-  background-color: rgba(220, 220, 225, 0.9);
+  background-color: rgba(0, 0, 0, 0.735);
   display: block;
-  height: 70%;
+  min-height: 100vh;
   justify-content: center;
 }
 .form .containercontacto {
-  width: 99%;
+  width: 100%;
   height: 450px;
 }
 .form .containercontacto .contactodata1 {
-  width: 99%;
+  width: 100%;
 }
 .form .containercontacto .contactodata1 select {
   background-color: rgb(186, 194, 200);
@@ -159,8 +156,7 @@ main {
   height: 40px;
 }
 .form .containercontacto .contactodata2 {
-  width: 99%;
-  margin-top: 5px;
+  width: 100%;
 }
 .form .containercontacto .contactodata2 input {
   background-color: rgb(186, 194, 200);
@@ -169,12 +165,13 @@ main {
   color: rgb(94, 95, 123);
   width: 100%;
   height: 40px;
+  margin-top: 3px;
 }
 .form .containercontacto .contactodata4 {
   width: 100%;
   position: absolute;
-  height: 125px;
-  bottom: -20px;
+  height: 128px;
+  bottom: -34px;
 }
 .form .containercontacto .contactodata4 textarea {
   background-color: rgb(186, 194, 200);
@@ -192,17 +189,15 @@ main {
   display: flex;
 }
 .form .containercontacto .contactodata4 .container-submit .submit {
-  width: 130px;
-  background-color: rgba(213, 226, 238, 0.966);
-  border: none;
-  border-bottom: 1px solid black;
-  color: rgb(33, 33, 42);
+  background-color: rgb(186, 194, 200);
+  margin-top: 5px;
+  width: 300px;
 }
 .form .contactodata3 {
   width: 100%;
-  height: 100px;
+  height: 200px;
   position: absolute;
-  top: 528px;
+  top: 529px;
 }
 .form .contactodata3 select {
   background-color: rgb(186, 194, 200);
@@ -211,23 +206,26 @@ main {
   color: rgb(94, 95, 123);
   width: 100%;
   height: 40px;
+  margin-top: 3px;
 }
 
 label {
-  color: rgb(11, 19, 26);
+  color: rgb(255, 255, 255);
   margin-left: 6px;
   font-size: 1.2em;
 }
 
 .container_info {
-  height: 100vh;
+  min-height: 100vh;
   width: 100%;
-  background-color: rgba(220, 220, 225, 0.9);
+  background-color: rgba(220, 220, 225, 0.04);
   justify-content: center;
 }
 .container_info h2 {
   text-align: center;
   font-size: 2.5em;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 8px white;
 }
 .container_info div {
   margin: 0 6px 0 6px;
@@ -235,6 +233,8 @@ label {
 .container_info div p {
   font-size: 1.1em;
   font-family: Teko-Regular;
+  color: rgb(255, 255, 255);
+  text-shadow: 0 0 7px white;
 }
 
 .grid-container1 {
@@ -325,16 +325,17 @@ footer {
   align-items: end;
 }
 footer .footer_icon {
-  width: 90px;
-  height: 90px;
-  right: 100px;
-  margin-bottom: 30px;
+  width: 70px;
+  height: 70px;
+  right: 30px;
+  margin: 0 0 30px 15px;
 }
 footer .footer-p {
   color: rgb(255, 255, 255);
   height: auto;
   margin: 0;
   font-size: 0.6em;
+  position: absolute;
 }
 footer .itemsfooter {
   margin: 0;
@@ -344,6 +345,10 @@ footer .itemsfooter {
 footer .itemsfooter li {
   list-style-type: none;
   font-family: Teko-Regular;
+}
+footer .itemsfooter li img {
+  width: 23px;
+  height: 23px;
 }
 footer .itemsfooter > li > a {
   text-decoration: none;
@@ -360,11 +365,10 @@ footer .icon-ws {
 footer .icon-ws img {
   width: 55px;
   height: 55px;
-  transition: transform 2s ease-in-out;
 }
 
-img:hover {
-  transform: rotate(360deg);
+.itemsfooter > li > a:hover {
+  color: rgb(249, 226, 165);
 }
 
 @media screen and (min-width: 750px) {
@@ -374,7 +378,7 @@ img:hover {
     background-color: rgb(33, 33, 42);
   }
   nav .nav {
-    height: 70px;
+    height: 120px;
     margin: 0;
     padding: 0;
     background-color: rgb(23, 23, 26);
@@ -616,14 +620,109 @@ img:hover {
   .container_info h2 {
     text-align: center;
     font-size: 2.5em;
+    top: 20px;
+    position: relative;
   }
   .container_info div {
     height: 100%;
-    margin: 20px 200px 0 200px;
+    margin: 40px 300px 0 300px;
   }
   .container_info div p {
     font-size: 1.3em;
   }
+}
+@keyframes logows {
+  from {
+    transform: rotate(15deg);
+  }
+  to {
+    transform: rotate(15deg);
+  }
+}
+.icon-ws:hover {
+  animation-name: logows;
+  animation-duration: 0.01s;
+  animation-direction: alternate-reverse;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  filter: drop-shadow(0 0 9px green);
+}
+
+@keyframes intermitente {
+  10% {
+    filter: drop-shadow(0 0 5px rgb(246, 221, 147));
+  }
+  25% {
+    filter: drop-shadow(0 0 6px rgb(246, 221, 147));
+  }
+  35% {
+    filter: drop-shadow(0 0 9px rgb(246, 221, 147));
+  }
+  45% {
+    filter: drop-shadow(0 0 6px rgb(246, 221, 147));
+  }
+  65% {
+    filter: drop-shadow(0 0 11px rgb(246, 221, 147));
+  }
+  75% {
+    filter: drop-shadow(0 0 6px rgb(246, 221, 147));
+  }
+  85% {
+    filter: drop-shadow(0 0 12px rgb(246, 221, 147));
+  }
+  100% {
+    filter: drop-shadow(0 0 16px rgb(246, 221, 147));
+  }
+}
+.footer_icon {
+  animation-name: intermitente;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-fill-mode: both;
+  filter: drop-shadow(0 0 13px rgb(246, 221, 147));
+}
+
+@keyframes logows {
+  from {
+    transform: rotate(20deg);
+  }
+  to {
+    transform: rotate(0deg);
+  }
+}
+.icon-ws:hover {
+  animation-name: logows;
+  animation-duration: 0.3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes BotonClick {
+  25% {
+    background-color: rgb(173, 173, 168);
+    border-top: 2px solid white;
+  }
+  50% {
+    background-color: rgba(199, 198, 196, 0.856);
+    border-right: 2px solid white;
+  }
+  75% {
+    background-color: rgba(224, 223, 219, 0.856);
+    border-bottom: 2px solid white;
+  }
+  100% {
+    background-color: rgba(233, 231, 229, 0.856);
+    border-left: 2px solid white;
+  }
+}
+.submit:hover {
+  animation-name: BotonClick;
+  background-color: rgb(255, 255, 255);
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
 }
 
 /*# sourceMappingURL=style.css.map */
