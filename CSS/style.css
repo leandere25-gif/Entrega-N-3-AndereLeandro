@@ -110,7 +110,7 @@ main {
 }
 
 body {
-  background-image: url(../images/backgroundbody.jpg);
+  background-image: url(../../assets/images/backgroundbody.jpg);
   background-color: rgba(0, 0, 0, 0.548);
   background-size: cover;
   background-attachment: fixed;
