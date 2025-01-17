@@ -131,10 +131,6 @@ body {
   margin: 15px 0 10px 0;
 }
 
-.article:hover {
-  opacity: 0.6;
-}
-
 .form {
   justify-content: center;
   font-family: Teko-Regular;
@@ -272,51 +268,37 @@ label {
 
 .article_1 {
   grid-area: article_1;
-  background-image: url(../../assets/images/guirnaldas-led.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .article_2 {
   grid-area: article_2;
-  background-image: url(../../assets/images/neon-led.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .article_3 {
   grid-area: article_3;
-  background-image: url(../../assets/images/focos8w.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .article_4 {
   grid-area: article_4;
-  background-image: url(../../assets/images/dicroica-led.jpg);
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .article_5 {
   grid-area: article_5;
-  background-image: url(../../assets/images/foco-vintage.jpg);
-  background-position: bottom;
-  background-size: cover;
-  width: 100%;
-  height: 100%;
 }
 
 .article_6 {
   grid-area: article_6;
-  background-image: url(../../assets/images/tira-led-rgb.jpg);
-  background-size: cover;
+}
+
+.article img {
   width: 100%;
   height: 100%;
+}
+
+.article img:hover {
+  opacity: 0.8;
+  transform: scale(99%);
+  transition: all 0.2s ease-in;
 }
 
 footer {
